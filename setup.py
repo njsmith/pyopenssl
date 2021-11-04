@@ -50,7 +50,7 @@ LONG = (
     + "Release Information\n"
     + "===================\n\n"
     + re.search(
-        r"(\d{2}.\d.\d \(.*?\)\n.*?)\n\n\n----\n",
+        r"(\d{2}.\d.\d \(.*?\)\r?\n.*?)\r?\n\r?\n\r?\n----\r?\n",
         read_file("CHANGELOG.rst"),
         re.S,
     ).group(1)
